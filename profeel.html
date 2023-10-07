@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>	
+ <meta charset="utf-8">
+<title>プロフィール</title> 
+ <meta name="description" content="サイトの概要を記載">
+ <link rel="stylesheet" href="profeelye.css">
+</head>
+<body>
+<h1 class="tytle">Welcome</h1>
+<h2 class="mainty">目次</h2>
+<ul class="sub">
+    <li class="nameyeh">名前</li>
+    <li class="informationyeh">情報</li>
+    <li class="sonotayeh">その他</li>
+</ul>
+<h2 class="mainty">名前</h2>
+<p class="main">僕の名前はHisato kingです。よろしく。</p>
+<h2 class="mainty" >情報</h2>
+<p class="main">たいして説明する情報は持っていません。年齢は毎年書き換えるのがとてもめんどくさいので、省略します。察してね。<br>
+次に住所についてですが、関西圏に住んでいるということしかお答えできません。当たり前ですが、家に来られると困るので。<br>
+最後に趣味について説明します。読書は好きです。漫画はNARUTOが好きです。火遁の術の印、できます。ワンピースが好きな僕のファンの皆様、ごめんなさい。<br>
+また、小説は正直あまり読みません。理由は簡単です。対して面白い物がないから。最近はまっているものを言いたいのですが、頻繁に変わるので省略します。</p>
+<h2 class="mainty">その他</h2>
+<p class="main">何か伝えたいことがあったら<a href=https://www.instagram.com/hisatoking/>ここ</a>へ。</p>
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td>
+<form method="POST" action="comment.php?rep=1" target="com">
+<span style="font-size:18px;font-weight:100;color:#ff0000"></span><b>コメント欄</b>（最高１００字）<br>
+<input type="text" id="comment" name="comment" size="80" style="width:535;border:1px solid #00ccff">
+<input type="submit" id="submit" value="送信" style="width:54"> 
+    </td></form>
+  </tr>
+  <tr>
+    <td>
+<div id="commentv" style="font-size:13px;line-height:15px;color:#666699;width:580px;height:160px;border:1px solid #00ccff;padding:8px;overflow-y:scroll;display:none;"></div>
+<iframe name="com" src="comment.php" id="com" style="width:301px;height:201px;frameborder:0px;border:0px;padding:0px;overflow:hidden;display:none;"></iframe>
+    </td>
+  </tr>
+</table>
+<br>
+</body>
+</html>
